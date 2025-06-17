@@ -1,0 +1,187 @@
+.dashboard {
+    display: flex;
+    font-family: 'Segoe UI', sans-serif;
+    min-height: 100vh;
+    background: #f4f4f4;
+}
+
+.sidebar {
+    width: 230px;
+    background: white;
+    padding: 20px;
+    box-shadow: 2px 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-logo {
+    width: 180px;
+    margin: 0 auto 30px;
+    display: block;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.sidebar-link {
+    text-decoration: none;
+    display: block;
+    border-radius: 6px;
+    width: 100%;
+}
+
+.sidebar li {
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 18px;
+    cursor: pointer;
+    color: #444;
+    background-color: #dddada;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar-link:hover li {
+    background-color: #e39a59;
+    color: #ffffff;
+}
+
+.sidebar-items {
+    background-color: red;
+}
+
+.main-content {
+    flex: 1;
+    padding: 25px 30px;
+}
+
+.header h3 {
+    margin: 0;
+    font-size: 22px;
+    color: #333;
+}
+
+.header p {
+    font-size: 14px;
+    color: #888;
+    margin-top: 8px;
+}
+
+.top-section,
+.bottom-section {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+    min-width: 280px;
+    flex: 1;
+}
+
+.features-bills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+}
+
+/* Profile section in sidebar */
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    position: relative;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 30px;
+}
+
+.profile-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-icon:hover {
+    background-color: #d5d5d5;
+}
+
+.profile-details {
+    margin-top: 10px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.profile-details h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.profile-details p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #666;
+}
+
+/* ✅ Dropdown menu for profile */
+.dropdown-menu {
+    position: absolute;
+    top: 120px;
+    left: 20px;
+    width: 220px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    z-index: -1;
+    transition: all 0.3s ease-in-out;
+}
+
+.dropdown-menu p {
+    font-size: 14px;
+    margin: 6px 0;
+    color: #333;
+    z-index: -1;
+}
+.profile-hover-card {
+  background-color: white;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  width: 220px;
+  text-align: left;
+  font-size: 14px;
+  color: #333;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.profile-hover-card p {
+  margin: 4px 0;
+  z-index: -1;
+}
+

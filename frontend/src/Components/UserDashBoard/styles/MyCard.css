@@ -1,0 +1,57 @@
+.card-container {
+  margin-left: 230px; /* Push content to the right of the sidebar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height to center vertically */
+  padding: 20px;
+  letter-spacing: normal;
+  box-sizing: border-box;
+}
+
+.error-message {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
+}
+
+.error-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.message h2 {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.message p {
+  color: #777;
+  margin-bottom: 20px;
+}
+
+/* Link Style (removes underline) */
+a {
+  text-decoration: none;
+}
+
+/* Retry Button Style */
+.retry-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block; /* Make button block-level */
+  width: 100%; /* Make button take up full width */
+}
+
+.retry-button:hover {
+  background-color: #45a049;
+}

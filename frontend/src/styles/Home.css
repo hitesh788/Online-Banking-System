@@ -1,0 +1,230 @@
+.home-container {
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  color: black; /* Ensuring text remains readable */
+  overflow: hidden;
+}
+
+/* ✅ Transparent Background Image (Fixed Path) */
+.home-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/public/Logo.png") no-repeat center center; /* Fixed Path */
+  background-size: cover;
+  opacity: 0.2; /* Adjust transparency level */
+  z-index: -1;
+}
+
+/* ✅ Banner Slider */
+.banner-slider {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ✅ Banner Image */
+.banner {
+  width: 100%;
+  height: 400px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+/* ✅ Sections */
+.section {
+  margin: 40px 0;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ✅ Picks & Products */
+.picks-container, .products-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.pick, .product {
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease;
+  text-decoration: none;
+}
+
+.pick:hover, .product:hover {
+  transform: scale(1.1);
+  text-decoration: underline;
+  color: coral;
+}
+
+.pick img, .product img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #ffecec;
+  padding: 10px;
+}
+
+.picks-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.show-more, .learn-more {
+  border: none;
+  background: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.show-more {
+  color: gray;
+}
+
+.learn-more {
+  color: red;
+}
+
+/* ✅ Announcements Section */
+/* ✅ Announcements Table */
+.announcements-table {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-collapse: collapse;
+  table-layout: fixed; /* ✅ Ensures columns respect widths */
+  overflow: hidden;
+  display: block;
+}
+
+/* ✅ Table Header & Rows */
+.table-header, .table-row {
+  display: flex;
+  width: 100%;
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+  align-items: center;
+}
+
+.table-header {
+  background: #f5e6da;
+  font-weight: bold;
+}
+
+/* ✅ Title Column */
+.column-title, .row-title {
+  flex: 3;
+  font-size: 16px;
+  text-align: left;
+  white-space: normal;
+  word-break: break-word;
+}
+
+/* ✅ Date Column */
+.column-date, .row-date {
+  flex: 1;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+
+/* ✅ FIX: Action Column */
+.column-action, .row-action {
+  flex: 0.8; /* ✅ Ensures Action column gets enough space */
+  text-align: right;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  min-width: 110px; /* ✅ Prevents "Read More" from cutting off */
+  white-space: nowrap; /* ✅ Keeps "Read More" in one line */
+}
+
+/* ✅ Mobile Fix */
+@media (max-width: 768px) {
+  .announcements-table {
+    overflow-x: auto;
+  }
+
+  .table-header, .table-row {
+    flex-wrap: wrap;
+  }
+
+  .column-title, .row-title {
+    flex: 100%;
+    font-size: 14px;
+  }
+
+  .column-action, .row-action {
+    flex: 1; /* ✅ Allows "Read More" to adjust */
+    text-align: center;
+  }
+}
+
+/* ✅ Featured Services */
+.services-section {
+  margin: 40px 0;
+  padding: 20px;
+  background: #f4f4f4;
+  border-radius: 10px;
+}
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.service {
+  text-align: center;
+}
+
+.service img {
+  width: 50px;
+  height: 50px;
+}
+
+/* ✅ Floating Buttons (Fixed for Smaller Screens) */
+.floating-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 1000;
+}
+
+.floating-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.floating-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* ✅ Specific Colors */
+.youtube { color: red; }
+.whatsapp { color: green; }
+.ai-bot { color: blue; }

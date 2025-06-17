@@ -1,0 +1,96 @@
+/* Container */
+.cc-modal-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cc-modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Title */
+.cc-modal-content h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form Group */
+.cc-form-group {
+  margin-bottom: 20px;
+}
+
+.cc-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+/* Input Group */
+.cc-input-group {
+  display: flex;
+  gap: 10px;
+}
+
+.cc-input,
+.cc-select {
+  flex: 1;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Action Buttons */
+.cc-action-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.cc-convert,
+.cc-clear {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.cc-convert {
+  background-color: #4caf50;
+  color: white;
+}
+
+.cc-clear {
+  background-color: #f0ad4e;
+  color: white;
+}
+
+/* Back Button */
+.cc-back-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.cc-back-button {
+  background-color: #f44336;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cc-back-button:hover {
+  background-color: #d32f2f;
+}

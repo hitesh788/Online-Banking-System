@@ -1,0 +1,61 @@
+.branches-container {
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  color: white;
+  overflow: hidden;
+}
+
+/* ✅ Adding Transparent Background Image */
+.branches-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("C:/Users/hejos/Downloads/Sri Eshwar College/Subjects/Fourth_Semester/FullStack Development/ManasluBank/frontend/public/Logo.png") no-repeat center center;
+  background-size: cover;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+.branches-container h2 {
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.branches-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 10px;
+  justify-content: center;
+}
+
+.branch-tile {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.branch-tile h3 {
+  color: #343a40;
+}
+
+.branch-tile p {
+  margin: 5px 0;
+  color: #555;
+}
+
+/* ✅ Hover Effect - Grey Background */
+.branch-tile:hover {
+  background-color: grey;
+  color: white;
+  transform: scale(1.05);
+}

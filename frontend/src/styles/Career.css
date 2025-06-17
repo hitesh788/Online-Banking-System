@@ -1,0 +1,45 @@
+.career-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+  padding: 20px;
+  background: url('https://th.bing.com/th/id/OIP.sSWFwO3XX9EIzKonnspiZQHaFj?rs=1&pid=ImgDetMain') no-repeat center center;
+  background-size: cover;
+  color: white;
+  position: relative;
+}
+
+.career-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  z-index: 0;
+}
+
+.career-icon,
+.career-title,
+.career-message {
+  position: relative;
+  z-index: 1;
+}
+
+.career-icon {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.career-title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.career-message {
+  font-size: 1.2rem;
+}

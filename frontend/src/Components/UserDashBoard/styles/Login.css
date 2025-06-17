@@ -1,0 +1,312 @@
+/* Full page background with image */
+.login-container {
+  min-height: 100vh;
+  background-image: url("https://wallpaperaccess.com/full/4597124.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  z-index: 0;
+}
+
+/* Dark overlay for contrast */
+.login-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.45);
+  z-index: -1;
+}
+
+/* Login box styling */
+.login-box {
+  background: white;
+  border-radius: 12px;
+  padding: 40px 35px;
+  max-width: 480px;
+  width: 100%;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* Logo */
+.login-logo {
+  width: 280px;
+  height: 250px;
+  cursor: pointer;
+  margin-top: -80px;
+  margin-bottom: -80px;
+}
+
+/* Welcome heading */
+.login-box h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 30px;
+}
+
+/* Highlight text */
+.neo-green {
+  color: #4caf50;
+}
+
+/* Input field container */
+.input-field {
+  display: flex;
+  align-items: center;
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  padding: 8px 12px;
+  position: relative;
+  background: #fafafa;
+}
+
+/* Country code clickable box */
+.country-code {
+  cursor: pointer;
+  font-size: 16px;
+  user-select: none;
+  margin-right: 10px;
+  color: #333;
+  white-space: nowrap;
+  display: flex; /* Added for flag image alignment */
+  align-items: center; /* Align flag and code vertically */
+  gap: 6px; /* Space between flag and code */
+}
+
+/* Dropdown select for countries */
+.country-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  margin-top: 6px;
+  border-radius: 6px;
+  border: 1.5px solid #ccc;
+  padding: 6px 10px;
+  font-size: 15px;
+  background: white;
+  z-index: 10;
+  appearance: none;
+  cursor: pointer;
+}
+
+/* Input text fields */
+.input-field input[type="text"],
+.input-field input[type="password"] {
+  flex-grow: 1;
+  border: none;
+  font-size: 16px;
+  background: transparent;
+  padding: 8px 6px;
+  outline: none;
+  color: #222;
+}
+
+/* Password field icon */
+.icon {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+/* Password visibility toggle */
+.toggle-password {
+  cursor: pointer;
+  color: #555;
+  font-size: 18px;
+  user-select: none;
+  margin-left: 10px;
+}
+
+/* Captcha container */
+.captcha-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+/* Checkbox styling */
+.captcha-check {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #555;
+}
+
+.captcha-check input[type="checkbox"] {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #4caf50;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  background: white;
+}
+
+.captcha-check input[type="checkbox"]:checked {
+  background-color: #4caf50;
+}
+
+.captcha-check input[type="checkbox"]:checked::after {
+  content: '✔';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 12px;
+}
+
+/* Captcha badge image */
+.captcha-badge {
+  width: 90px;
+  height: auto;
+}
+
+/* Button container for proper alignment */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+/* Continue button */
+.btn-continue {
+  flex: 1;
+  background-color: #4caf50;
+  color: white;
+  font-size: 18px;
+  padding: 14px 0;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-continue:hover {
+  background-color: white;
+  color: green;
+  border:2px solid green;
+}
+
+/* Sidebar hover (unrelated, preserved as provided) */
+.sidebar-items:hover {
+  background-color: #e39a59;
+}
+
+/* Error message */
+.error-message {
+  margin-top: 15px;
+  color: #e74c3c;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* Signup button */
+.btn-open {
+  flex: 1;
+  background: transparent;
+  border: 2px solid #4caf50;
+  color: #4caf50;
+  padding: 13px 10px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  width:230px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-open:hover {
+  background-color: #4caf50;
+  color: white;
+}
+
+/* Social icons container */
+.social-icons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* Social media icons */
+.social-icons a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 20px;
+  color: white;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.1);
+}
+
+.social-icons .facebook {
+  background-color: #3b5998;
+}
+
+.social-icons .twitter {
+  background-color: #1da1f2;
+}
+
+.social-icons .linkedin {
+  background-color: #0077b5;
+}
+
+/* Flag icon for country code */
+.flag-icon {
+  width: 20px;
+  height: 15px;
+  object-fit: cover;
+  vertical-align: middle;
+}
+
+/* Enhance dropdown option readability */
+.country-dropdown option {
+  padding: 8px;
+  font-size: 15px;
+  color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 450px) {
+  .login-box {
+    padding: 30px 20px;
+    max-width: 380px;
+  }
+
+  .login-logo {
+    width: 160px;
+  }
+
+  .button-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .btn-continue,
+  .btn-open {
+    width: 100%;
+  }
+}

@@ -1,0 +1,114 @@
+.container {
+  padding: 20px;
+  
+}
+
+.accounts-container {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f8f9fa;
+  background: url('https://th.bing.com/th/id/OIP.sSWFwO3XX9EIzKonnspiZQHaFj?rs=1&pid=ImgDetMain') no-repeat center center;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.accounts-container h2 {
+  color: #007bff;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.accounts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Exactly 3 cards per row */
+  gap: 40px; /* Increased overall gap for better separation */
+  row-gap: 50px; /* Explicitly increase vertical gap between rows */
+  max-width: 1200px; /* Constrain width for better alignment */
+  margin: 0 auto; /* Center the grid */
+  padding: 0 20px;
+  margin-bottom: 40px; /* Space below grid */
+}
+
+.account-tile {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* Ensure all tiles are equal height */
+  margin-bottom: 20px; /* Space below each card */
+}
+
+.account-tile:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.account-image {
+  width: 100%;
+  height: 180px; /* Fixed height for consistency */
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+  margin-bottom: 15px;
+}
+
+.account-tile h3 {
+  color: #343a40;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.account-tile h4 {
+  color: #007bff;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.account-tile ul {
+  text-align: left;
+  padding-left: 25px;
+  margin: 0;
+  flex-grow: 1; /* Ensure list takes available space */
+}
+
+.account-tile ul li {
+  color: #555;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+  list-style-type: disc;
+  line-height: 1.5;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .accounts-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row on medium screens */
+    row-gap: 40px; /* Slightly smaller row gap for medium screens */
+  }
+}
+
+@media (max-width: 600px) {
+  .accounts-grid {
+    grid-template-columns: 1fr; /* 1 card per row on small screens */
+    row-gap: 30px; /* Adjust row gap for small screens */
+  }
+
+  .accounts-container h2 {
+    font-size: 2rem;
+  }
+
+  .account Survivor {
+    padding: 15px;
+    margin-bottom: 15px; /* Adjust margin for smaller screens */
+  }
+}

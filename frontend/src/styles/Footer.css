@@ -1,0 +1,110 @@
+.footer {
+  background-color: #5E5C5F;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+/* Footer Sections */
+.footer-section {
+  width: 30%;
+  
+  text-align: left;
+  margin-bottom: 20px; /* Added for spacing on smaller screens */
+}
+
+.footer-section a {
+  color: inherit; /* Uses the default text color (white) */
+  text-decoration: none; /* Removes underline */
+  font-weight: normal;
+}
+
+.footer-section a:hover {
+  text-decoration: underline; /* Adds underline on hover for better UX */
+}
+
+.footer-section h3 {
+  border-bottom: 2px solid #f1c40f;
+  padding-bottom: 10px;
+  font-size: 1.2rem; /* Consistent heading size */
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section li {
+  margin: 8px 0;
+  font-size: 0.9rem; /* Slightly smaller text for list items */
+}
+
+/* Exclusive Partner Section */
+.exclusive-partner {
+  margin-top: 15px; /* Space above the section */
+}
+
+.exclusive-partner h4 {
+  font-size: 1rem; /* Matches other footer text sizes */
+  margin-bottom: 10px;
+  color: #f1c40f; /* Yellow accent to match h3 border */
+}
+
+.payment-icons {
+  display: flex;
+  gap: 12px; /* Space between icons */
+  flex-wrap: wrap; /* Wrap icons on smaller screens */
+  align-items: center;
+}
+
+.payment-icon {
+  width: 100px; /* Increased icon size */
+  height: auto;
+  object-fit: contain; /* Ensures proper scaling */
+}
+
+/* Map Container */
+.map-container {
+  width: 30%;
+  margin-bottom: 20px; /* Added for spacing on smaller screens */
+}
+
+.map-container iframe {
+  border-radius: 10px;
+  border: none;
+  width: 100%;
+  height: 80%;/* Ensure iframe fills container */
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  background-color: #1a252f;
+  padding: 10px 0;
+  margin-top: 20px;
+  font-size: 0.85rem; /* Slightly smaller for copyright */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-section,
+  .map-container {
+    width: 100%; /* Full width on smaller screens */
+    text-align: center; /* Center text for better mobile display */
+  }
+
+  .footer-section h3,
+  .exclusive-partner h4 {
+    text-align: center; /* Center headings on mobile */
+  }
+
+  .payment-icons {
+    justify-content: center; /* Center icons on mobile */
+  }
+}

@@ -1,0 +1,110 @@
+/* Cards Container */
+.Cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+  background-color: #f8f8f8;
+}
+
+/* Individual Card */
+.account-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 25px;
+  width: 350px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+/* Hover Effect */
+.account-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Image */
+.card-banner {
+  width: 100%;
+  height: 180px; /* Adjust the height to fit */
+  object-fit: cover; /* Ensures the image covers the area properly */
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Card Title */
+.account-card h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Description Paragraph */
+.account-card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Bullet List */
+.account-card ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.account-card ul li {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.account-card ul li .bullet {
+  color: orange;
+  font-size: 1.2rem;
+  margin-right: 8px;
+}
+
+/* Buttons Container */
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Know More Button */
+.btn-know-more {
+  border: 2px solid orange;
+  background: transparent;
+  color: orange;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-know-more:hover {
+  background: orange;
+  color: white;
+}
+
+/* Apply Online Button */
+.btn-apply {
+  background: rgb(255, 165, 0);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-apply:hover {
+  background: darkorange;
+}

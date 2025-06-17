@@ -1,0 +1,102 @@
+.contact-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background: #f8f9fd;
+    padding: 30px;
+  }
+  
+  .contact-title {
+    color: #002f6c;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .contact-card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tab-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .tab {
+    border: none;
+    background: #f1f1f1;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 5px;
+    border-radius: 20px;
+  }
+  
+  .tab.active {
+    background: #ff914d;
+    color: white;
+  }
+  
+  .contact-details, .additional-details {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  .contact-box {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    width: 45%;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-icon {
+    width: 50px;
+    margin-right: 15px;
+  }
+  
+  .contact-number {
+    font-weight: bold;
+    color: #002f6c;
+    font-size: 18px;
+  }
+  
+  .contact-email {
+    color: #0056b3;
+    font-weight: bold;
+  }
+  
+  .divider {
+    border: 1px solid #ccc;
+    margin: 20px 0;
+  }
+  
+  .feedback-section {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .feedback-btn {
+    background: #ff914d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+  
+  .feedback-btn:hover {
+    background: #e56f2d;
+  }
+  

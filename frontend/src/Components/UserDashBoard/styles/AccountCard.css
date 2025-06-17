@@ -1,0 +1,21 @@
+.account-card {
+    background-color: #4CAF50; /* solid green */
+    border-radius: 16px;
+    padding: 24px;
+    color: #2d6c31; /* white text for contrast */
+    box-shadow: 0 8px 16px rgba(0, 123, 255, 0.2);
+  }
+  
+  .account-card h4 {
+    font-size: 18px;
+    color: #ff0505;
+    margin-bottom: 10px;
+  }
+
+  
+  .account-card p {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+  }
+  

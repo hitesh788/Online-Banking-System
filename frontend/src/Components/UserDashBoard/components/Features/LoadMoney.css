@@ -1,0 +1,332 @@
+/* LoadMoney.css */
+.lm-topup-container {
+    max-width: 520px;
+    margin: 0 auto;
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    padding: 24px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.lm-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.lm-modal-content {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 24px;
+    max-width: 520px;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.lm-recent-payments {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.lm-payment-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 12px;
+    min-width: 120px;
+    text-align: center;
+    font-size: 14px;
+    background: #fafafa;
+    transition: transform 0.2s ease;
+}
+
+.lm-payment-card:hover {
+    transform: translateY(-2px);
+}
+
+.lm-info-box {
+    border-left: 4px solid #16a34a;  /* Blue accent */
+    background-color: #eff6ff;
+    padding: 12px 16px;
+    margin-bottom: 24px;
+    font-size: 14px;
+    line-height: 1.5;
+    border-radius: 4px;
+}
+
+.lm-form-group {
+    margin-bottom: 20px;
+}
+
+.lm-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #1f2937;
+}
+
+.lm-required {
+    color: #ef4444;
+}
+
+.lm-input-group {
+    display: flex;
+    align-items: center;
+}
+
+.lm-input[type="text"] {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px 0 0 8px;
+    font-size: 14px;
+    transition: border-color 0.2s ease;
+}
+
+.lm-input[type="text"]:focus {
+    outline: none;
+    border-color: #16a34a;
+}
+
+.lm-icon-btn {
+    background-color: #16a34a;
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 18px;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.lm-icon-btn:hover {
+    background-color: #164f2b;
+}
+
+.lm-promocode-btn {
+    background-color: #eff6ff;
+    border: 1px solid #16a34a;
+    color: #000000; /* Changed to black */
+    padding: 12px;
+    width: 100%;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 24px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+}
+
+
+.lm-promocode-btn:hover {
+    background-color: #dbeafe;
+}
+
+.lm-reward-section,
+.lm-total-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #1f2937;
+}
+
+.lm-total-section {
+    background: #f0f9ff;
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.lm-action-buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.lm-proceed {
+    background-color: #16a34a;
+    color: white;
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.lm-proceed:hover {
+    background-color:#164f2b;
+}
+
+.lm-clear {
+    background-color: #ffffff;
+    color: #1f2937;
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: border-color 0.2s ease;
+}
+
+.lm-clear:hover {
+    border-color: #9ca3af;
+}
+
+.lm-footer-buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 24px;
+    justify-content: flex-end;
+}
+
+.lm-back-btn {
+    background-color: #f3f4f6;
+    color: #1f2937;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.lm-back-btn:hover {
+    background-color: #e5e7eb;
+}
+
+.lm-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1100;
+}
+
+.lm-popup-content {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 24px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.lm-popup-content h3 {
+    margin-bottom: 16px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.lm-popup-content p {
+    margin-bottom: 24px;
+    font-size: 16px;
+    color: #4b5563;
+}
+
+.lm-popup-close-btn {
+    background-color: #16a34a;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.lm-popup-close-btn:hover {
+    background-color: #2563eb;
+}
+
+.lm-loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+    padding: 16px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #1f2937;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 1200;
+}
+.lm-form-group {
+  position: relative; /* important to scope dropdown */
+  margin-bottom: 20px;
+}
+
+.lm-input-group {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.lm-input {
+  width: 150%;         /* make full width of parent */
+  max-width: 400px;    /* increase this as needed */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.lm-icon-btn {
+  background: #28a745;
+  border: none;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+}
+
+.lm-bank-dropdown {
+  position: absolute;
+  top: 100%; /* directly below input */
+  left: 0;
+  right: 0;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 6px 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  z-index: 1000;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.lm-bank-item {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+
+.lm-bank-item:hover {
+  background-color: #f8f8f8;
+}

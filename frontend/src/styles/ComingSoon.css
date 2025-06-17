@@ -1,0 +1,16 @@
+.coming-soon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8f9fa;
+  text-align: center;
+  flex-direction: column; /* Ensures text is stacked in new lines */
+}
+
+.coming-soon-text {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px; /* Adds spacing between lines */
+}

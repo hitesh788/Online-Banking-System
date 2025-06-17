@@ -1,0 +1,219 @@
+/* Loans Container */
+.Loans-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+  position: relative;
+  min-height: 100vh;
+  background: url('https://th.bing.com/th/id/OIP.sSWFwO3XX9EIzKonnspiZQHaFj?rs=1&pid=ImgDetMain') no-repeat center center;
+  background-size: cover;
+  color: white;
+  z-index: 0;
+}
+
+.Loans-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Optional dark overlay */
+  z-index: -1;
+}
+
+
+/* Individual Loan Card */
+.loan-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 25px;
+  width: 350px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+/* Hover Effect */
+.loan-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Loan Card Image */
+.card-banner {
+  width: 100%;
+  height: 180px; /* Adjust the height to fit */
+  object-fit: cover; /* Ensures the image covers the area properly */
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Card Title */
+.loan-card h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Description Paragraph */
+.loan-card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Bullet List */
+.loan-card ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.loan-card ul li {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.loan-card ul li .bullet {
+  color: coral;
+  font-size: 1.2rem;
+  margin-right: 8px;
+}
+
+/* Buttons Container */
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Know More Button */
+.btn-know-more {
+  border: 2px solid orange;
+  background: transparent;
+  color: coral;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-know-more:hover {
+  background: orange;
+  color: white;
+}
+
+/* Apply Now Button */
+.btn-apply {
+  background: coral;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-apply:hover {
+  background: rgb(109, 63, 7);
+}
+
+/* Popup Overlay: covers whole viewport, centers popup */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;             /* full viewport width */
+  height: 100vh;            /* full viewport height */
+  background-color: rgba(0, 0, 0, 0.5); /* dark translucent background */
+  display: flex;
+  justify-content: center;  /* horizontal center */
+  align-items: center;      /* vertical center */
+  z-index: 1000;            /* on top of everything */
+}
+
+/* Popup Modal: white box with rounded corners and padding */
+.popup-modal {
+  background: #fff;
+  border-radius: 12px;
+  padding: 40px 30px;
+  width: 350px;
+  max-width: 90vw;          /* responsive on smaller screens */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Popup Text */
+.popup-modal p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+/* Buttons container with space between buttons */
+.popup-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Confirm Button */
+.btn-confirm {
+  background-color: coral;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  min-width: 100px;
+}
+
+.btn-confirm:hover {
+  background-color: rgb(109, 63, 7);
+}
+
+/* Cancel Button */
+.btn-cancel {
+  background-color: transparent;
+  border: 2px solid coral;
+  color: coral;
+  padding: 10px 25px;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  min-width: 100px;
+}
+
+.btn-cancel:hover {
+  background-color: coral;
+  color: white;
+}
+
+/* Success Message */
+.success-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.success-message img {
+  margin-bottom: 10px;
+}
+
+.success-message p {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.4;
+}

@@ -1,0 +1,213 @@
+/* Overall page background and font with background image */
+.signup-page {
+  min-height: 100vh;
+  background-image: url("https://wallpaperaccess.com/full/4597124.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+  position: relative;
+  z-index: 0;
+}
+
+/* Dark overlay on background for better contrast */
+.signup-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.45);
+  z-index: -1;
+  border-radius: 0; /* full screen, so no border radius */
+}
+
+/* Container holding the form */
+.signup-container {
+  background: white;
+  padding: 40px 30px;
+  max-width: 400px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* Logo styling */
+.logo-container {
+  margin-bottom: 25px;
+}
+
+.signup-logo {
+  width: 120px;
+  cursor: pointer;
+}
+
+/* Form title */
+.form-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 30px;
+}
+
+/* Form styling */
+.signup-form {
+  text-align: left;
+}
+
+/* Input group container */
+.input-group {
+  margin-bottom: 20px;
+}
+
+/* Labels */
+.input-group label {
+  display: block;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+/* Red asterisk for required fields */
+.asterisk {
+  color: #e74c3c;
+}
+
+/* Text inputs, email, password, and select */
+.input-group input[type="text"],
+.input-group input[type="email"],
+.input-group input[type="password"],
+.input-group select {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 16px;
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.input-group input[type="text"]:focus,
+.input-group input[type="email"]:focus,
+.input-group input[type="password"]:focus,
+.input-group select:focus {
+  outline: none;
+  border-color: #4caf50;
+  box-shadow: 0 0 6px rgba(76, 175, 80, 0.4);
+}
+
+/* Mobile input group: select + input inline */
+.mobile-input {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  position: relative; /* Added for dropdown positioning */
+}
+
+/* Country code clickable box */
+.country-code {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 12px;
+  font-size: 16px;
+  color: #333;
+  white-space: nowrap;
+  border: 1.5px solid #ccc;
+  border-radius: 6px 0 0 6px;
+  background: #fafafa;
+  cursor: pointer;
+}
+
+/* Dropdown select for countries */
+.country-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 150px;
+  margin-top: 6px;
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 15px;
+  background: white;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.country-dropdown option {
+  padding: 8px;
+}
+
+/* Flag icon */
+.flag-icon {
+  width: 20px;
+  height: 15px;
+  object-fit: cover;
+  vertical-align: middle;
+}
+
+/* Mobile number input */
+.mobile-input input[type="text"] {
+  flex-grow: 1;
+  border-radius: 0 6px 6px 0;
+  border-left: none; /* Added to align with country-code */
+}
+
+/* Signup button */
+.signup-btn {
+  width: 100%;
+  padding: 14px 0;
+  background-color: #4caf50;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.signup-btn:hover {
+  background-color: #43a047;
+}
+
+/* Text below form */
+.signup-text {
+  margin-top: 20px;
+  font-size: 15px;
+  color: #666;
+  text-align: center;
+}
+
+/* Link in signup text */
+.signup-link a {
+  color: #4caf50;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.signup-link a:hover {
+  color: #388e3c;
+}
+
+/* Responsive tweaks */
+@media (max-width: 450px) {
+  .signup-container {
+    padding: 30px 20px;
+  }
+
+  .country-code {
+    padding: 10px 8px;
+  }
+
+  .country-dropdown {
+    width: 130px;
+  }
+}

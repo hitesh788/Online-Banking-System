@@ -1,0 +1,62 @@
+/* Container for the entire bills section */
+.bills {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  max-width: 800px;
+  margin: 24px auto;
+}
+
+/* Title styling */
+.bills h3 {
+  font-size: 18px;
+  color: #003366;
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
+/* Layout for buttons */
+.bills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+/* Individual bill button */
+.bill-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: #e6f0ff;
+  color: #004a99;
+  width: 120px;
+  height: 100px;
+  padding: 12px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+/* Hover effect for buttons */
+.bill-button:hover {
+  background-color: #cce0ff;
+  transform: scale(1.05);
+}
+
+/* Logo inside each button */
+.bill-button .logo {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  margin-bottom: 6px;
+}

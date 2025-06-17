@@ -1,0 +1,27 @@
+.container {
+    padding: 20px;
+  }
+  .transactions-container {
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    color: white; /* Ensuring text remains readable */
+    overflow: hidden;
+  }
+  
+  /* ✅ Adding Transparent Background Image */
+  .transactions-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("C:\Users\hejos\Downloads\Sri Eshwar College\Subjects\Fourth_Semester\FullStack Development\ManasluBank\frontend\public\Logo.png") no-repeat center center;
+    background-size: cover;
+    opacity: 0.2; /* Adjust transparency level */
+
+    z-index: -1;
+  }
